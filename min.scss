@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --bkash-defold-color:#E2136E;
+}
+
+.main-bkash-logo{
+    height:33px;
+    width:90px;
+    margin-left:70px;
+}
+
+//START NAVBAR 
+.navbar-wraper{
+    background-color: #E2136E;
+}
+//this is for maga menu
+.dropdown-menu ul{
+    list-style:none;
+    padding:10px;
+}
+.dropdown-menu ul{
+    margin:20px 30px;
+}
+.dropdown-menu.show{
+    display:flex;
+ }
+.dropdown-menu li:first-child a{
+   font-weight:bold;
+   font-size:1rem;
+}
+@media screen and (min-width:968px) {
+        .dropdown:hover .dropdown-menu{
+            display: flex;
+            justify-content:space-evenly;
+            width: 100%;
+            left:0;
+    }
+}
+@media screen and (max-width:678px) {
+    .dropdown:hover .dropdown-menu{
+        flex-direction:column;
+        width: 100%;
+        max-height: 80vh;
+        overflow-y:scroll;
+        flex-direction: column;
+}
+//end mega manu responsib
+//this is mega menu icons
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #ddddddd0;
+}
+.icon-image{
+    height: 30px;
+    width: 30px;
+}
+// this is adjust nav links or images
+.dropdown-menu li{
+    display:flex;
+}
+.nav-item{
+    margin:0 20px;
+}
+//end all of mega menu
+//this is for manu links
+.language-chenge{
+    display:flex;
+    margin-left:23px;
+}
+.app-buttons{
+    display: flex;
+    margin-right:5px;
+}
+.nav-link{
+    color:#fff;
+    border:1px solid transparent;
+    border-radius:20px;
+}
+.nav-link:hover{
+    color:#fff;
+    border:1px solid #fff;
+}
+//this is for language buttons
+.language-btn{
+    text-decoration:none;
+    color:#fff;
+}
+.bkash-app-btn{
+    padding:4px 32px;
+    border-radius:15px;
+    background-color:#E2136E;
+    color:#fff;
+    border:2px solid #fff;
+    outline:none;
+    transition:.5s;
+}
+.bkash-app-btn:hover{
+   background-color: #fff;
+   color:#E2136E;
+}
+@media screen and (max-width:578px) {
+    .app-buttons{
+        display:none;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar-brand{
+      margin-left:-64px;
+    }
+    .hero .carousel-indicators button{
+      display:none;
+    }
+}
+//end of full navbar
+//this is hero section
+// this is for carosel indicators
+.hero .carousel-indicators button{
+    height:25px;
+    width: 25px;
+    border-radius:50%;
+    background-color:var(--bkash-defold-color);
+}
+.hero .carousel-indicators{
+   top:100%; 
+}
+.main-cards{
+    width: 250px;
+    height:400px;
+    margin:0 40px;
+    transition:.5s;
+    margin-top: 20px;
+    border:none;
+    outline:none;
+}
+.main-boxes{
+    width: 100%;
+}
+.main-4-boxes-container{
+    margin-top:100px;
+    height: 700px;
+    background-image: linear-gradient(rgb(255, 232, 243), rgb(255, 234, 247));
+}
+.main-cards:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .card-title{
+        color:#E2136E;
+    }
+}
+.card-title{
+   transition:.5s;
+   margin-top:20px;
+}
+.janun{
+    text-decoration:none;
+    font-size:1rem;
+    transition:.5s;
+    color:#E2136E;
+}
+.box-image{
+    height:170px;
+    width:150px;
+    margin-left:47px;
+}
+@media screen and (max-width:568px) {
+    .main-cards{
+        width: 110px;
+        height:130px;
+        margin-left:48px;
+    }
+    .card-text{
+        display:none;
+    }
+    .box-image{
+        height:50px;
+        width:50px;
+        margin-left:31px;
+    }
+    .card-title{
+        font-size:.7rem;
+        margin-top:13px;
+    }
+    .janun{
+        font-size:.7rem;
+    }
+    .card-body{
+        line-height: -1;
+    }
+    .box-1{
+        margin-left:0;
+        
+    }
+    .main-boxes{
+        width: 100%;
+    }
+}
+// end 4 boxes end of all
+// start horizontal line
+.horizontal-line{
+    margin-toP:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.Arojanun-titel{
+    display:grid;
+    grid-template-columns:repeat(3, 3fr) ;
+    column-gap:3rem;
+    justify-content:center;
+    align-items: center;
+    font-weight:bold;
+}
+.Arojanun-titel::before, .Arojanun-titel::after{
+    content:"";
+    height:2px;
+    background-color: rgba(0, 0, 0, 0.137);
+    display:block;
+}
+@media screen and (max-width:658px) {
+    .Arojanun-titel::before, .Arojanun-titel::after{
+       display:none;
+    }
+    .Arojanun-titel{
+       display: block;
+       text-align:center;
+       font-size:.8rem;
+    }
+    .swiper-wrapper{
+        margin-left:20px;
+    }
+    .slis-text{
+        font-size:.8rem;
+        margin-left:8px;
+    }
+}
+// end horizontal line all
+// this is black banar
+.black-poster-container{
+    height:600px;
+    width:100%;
+    background-image: url("static-banner.webp");
+    background-size:cover ;
+    display:flex;
+    justify-content:center;
+}
+.banar-text-1{
+    color:#E2136E;
+    font-weight:bold;
+}
+.banar-text-2{
+    color:#ffffff;
+    font-weight:bold;
+    font-size:.8rem;
+    margin-top:25px;
+}
+.ios-app{
+    width:150px;
+    height: 50px;
+    margin-right:140px;
+}
+.play-app{
+    height:50px;
+    width:150px;
+    margin-right:20px;
+}
+.mobile-banar{
+    margin-top:70px;
+    margin-right:120px;
+}
+.app-textaria{
+    margin-top:280px;
+    margin-right:100px;
+}
+.app-dounlode-text-container{
+    width: 50%;
+}
+@media screen and (max-width:558px) {
+    .black-poster-container{
+       flex-direction: column;
+    }
+    .app-dounlode-text-container{
+        width: 100%;
+    }
+    .mobile-banar{
+       height: 200px;
+       width: 200px;
+    }
+    .banar-text-1{
+        font-size: 1rem;
+    }
+    .banar-text-2{
+     font-size:.5rem;
+       }
+
+       .ios-app{
+        margin-right:0;
+        width: 120px;
+    }
+    .play-app{
+        margin-right:0;
+        width: 120px;
+    }
+    .mobile-banar{
+        margin-top:20px;
+        margin-left:80px;
+        margin-right:0;
+        height: 340px;
+    }
+    .app-textaria{
+        margin-top:0;
+        margin-right:0;
+    }
+}
